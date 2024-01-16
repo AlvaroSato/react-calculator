@@ -49,11 +49,11 @@ export default function Calculator() {
     if(operator === '/'){
       num = parseFloat(oldResult) / parseFloat(result);
     } else if(operator === '*'){
-      num = parseFloat(oldResult) / parseFloat(result);
+      num = parseFloat(oldResult) * parseFloat(result);
     } else if(operator === '-'){
-      num = parseFloat(oldResult) / parseFloat(result);
+      num = parseFloat(oldResult) - parseFloat(result);
     } else if(operator === '+'){
-      num = parseFloat(oldResult) / parseFloat(result);
+      num = parseFloat(oldResult) + parseFloat(result);
     }
     setResult(Math.round(num * 10**round) / (10**round));
   }
